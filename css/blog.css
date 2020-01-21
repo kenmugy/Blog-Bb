@@ -1,0 +1,31 @@
+body{
+    background: rgb(232, 190, 243);
+}
+#feedback {
+    display: none;
+    color: red;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bts {
+    display: flex;
+    align-items: center;
+}
+
+i{
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.post_btn {
+    display: flex;
+    justify-content: center;
+}

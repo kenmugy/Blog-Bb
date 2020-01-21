@@ -6,6 +6,10 @@
     <title>Blog - B</title>
     <link rel="stylesheet" href="./css/blog.css" />
     <link rel="stylesheet" href="./css/materialize.min.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -23,17 +27,18 @@
     <main class="container">
       <section class="top">
         <h1>Welcome to my blog</h1>
+        <div id="feedback"></div>
         <form action="" class="card-panel z-depth-3 ">
+          <h5 class="center purple-text">Add BLog</h5>
           <div class="input-fields">
             <input type="text" id="title" />
             <label for="title">Title</label>
           </div>
           <div class="input-fields">
             <input type="text" id="body" />
-
             <label for="body">Body</label>
           </div>
-          <button class="btn purple ">Post</button>
+          <div class="post_btn"><button class="btn purple">Post</button></div>
         </form>
       </section>
       <section class="mid"></section>
