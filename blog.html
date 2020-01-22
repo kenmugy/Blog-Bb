@@ -26,7 +26,7 @@
     </header>
     <main class="container">
       <section class="top">
-        <h1>Welcome to my blog</h1>
+        <h1 class="white-text">Welcome to my blog</h1>
         <div id="feedback"></div>
         <form action="" class="card-panel z-depth-3 ">
           <h5 class="center purple-text">Add BLog</h5>
@@ -42,6 +42,16 @@
         </form>
       </section>
       <section class="mid"></section>
+       
+    <div class="myModal">
+      <div class="modal-content">
+          <span id="close">&times;</span>
+        <p class="center">Update Post</p>
+        <h3 id="newTitle" contenteditable="true">Title goes here</h3>
+        <p id="newBody" contenteditable="true">Body goes here</p>
+        <button class="btn blue" id="updateBtn">Update</button>
+      </div>
+    <div>
     </main>
     <script src="./js/blog.js"></script>
     <script src="./js/materialize.min.js"></script>
