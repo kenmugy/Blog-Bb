@@ -9,7 +9,9 @@ body {
 
 #feedback {
   display: none;
-  color: red;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1.2px;
   padding: 5px;
   text-align: center;
   border-radius: 5px;

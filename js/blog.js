@@ -10,16 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const newTitle = document.getElementById('newTitle');
   const newBody = document.getElementById('newBody');
 
-  let blogPosts = JSON.parse(localStorage.getItem('Blog Posts')) || []; // without the || this wil alwys return null
+  let blogPosts = JSON.parse(localStorage.getItem('Blog Posts')) || []; 
 
   document.addEventListener('submit', e => {
     e.preventDefault();
     if (!titleInput.value.trim()) {
       feedback.style.display = 'block';
-      feedback.textContent = 'Please provide a Title for your Post';
+      feedback.textContent = 'Please provide a Title for your Post!!!';
     } else if (!bodyInput.value.trim()) {
       feedback.style.display = 'block';
-      feedback.textContent = 'Please provide a Body for your Post';
+      feedback.textContent = 'Please provide a Body for your Post!!!';
     } else {
       feedback.style.display = 'none';
       const blogPost = {
@@ -80,7 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
             dateCreated: new Date().toLocaleString()
           };
           blogPosts = [...blogPosts, blogPost];
-          log(blogPosts);
           modal.style.display = 'none';
           localStorage.setItem('Blog Posts', JSON.stringify(blogPosts));
           getLocalStorage();
